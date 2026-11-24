@@ -391,6 +391,69 @@ details.fold>summary::-webkit-details-marker{display:none}
 .namelist .av{width:32px;height:32px;font-size:.8em}
 .namelist small{margin-left:auto;font-weight:500}
 .guestbar{background:linear-gradient(120deg,color-mix(in srgb,var(--a2) 22%,var(--sf)),var(--sf));border:1px solid color-mix(in srgb,var(--a2) 40%,var(--bd));border-radius:16px;padding:16px;margin-bottom:16px}
+
+/* ======= DASHBOARD GÖRÜNÜMÜ ======= */
+.side{background:linear-gradient(180deg,color-mix(in srgb,var(--ac) 26%,#0c1222) 0%,#0e1526 55%,#0b1120 100%);border-right:0;color:#d6ddeb;box-shadow:4px 0 24px rgba(0,0,0,.12)}
+.side .brand .bt b{color:#fff}.side .brand .bt small{color:#8d98b3!important}
+.side .nav button{color:#c8d0e0}
+.side .nav button:hover{background:rgba(255,255,255,.07);color:#fff}
+.side .nav button.on{background:linear-gradient(90deg,color-mix(in srgb,var(--ac) 55%,transparent),rgba(255,255,255,.06));color:#fff}
+.side .nav button.on::before{background:#fff}
+.side .nav .sep{background:rgba(255,255,255,.1)}
+.side .side-foot{background:rgba(255,255,255,.07);color:#e6ebf5}.side .side-foot .mu{color:#8d98b3}.side .side-foot .icon-btn{color:#c8d0e0}.side .side-foot .icon-btn:hover{background:rgba(255,255,255,.1);color:#fff}
+.top{background:color-mix(in srgb,var(--sf) 88%,transparent);box-shadow:0 1px 0 var(--bd)}
+.dchip{display:inline-flex;align-items:center;gap:6px;padding:.4em .8em;border-radius:99px;background:var(--sf2);font-size:.82em;color:var(--mu);white-space:nowrap}
+.dchip b{color:var(--ac)}
+.bell{position:relative;width:40px;height:40px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);cursor:pointer;font-size:1.1rem;display:grid;place-items:center;flex:none}
+.bell:hover{border-color:var(--ac)}
+.bell .badge{position:absolute;top:-6px;right:-6px}
+.card{border-radius:18px;border-color:color-mix(in srgb,var(--bd) 70%,transparent)}
+.card>h3:first-child,.card-head h3{font-size:1rem;letter-spacing:-.005em}
+.kpis{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:var(--gap)}
+.kpi.fill{background:linear-gradient(135deg,var(--kc) 0%,color-mix(in srgb,var(--kc) 62%,#101828) 100%);border:0;color:#fff;box-shadow:0 8px 22px color-mix(in srgb,var(--kc) 30%,transparent);border-radius:18px;padding:16px 16px 14px;min-height:118px}
+.kpi.fill small{color:rgba(255,255,255,.85)!important;letter-spacing:.04em}
+.kpi.fill b{color:#fff!important;font-size:1.55em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi.fill span{color:rgba(255,255,255,.82)!important}
+.kpi.fill .of{color:rgba(255,255,255,.75)!important}
+.kpi.fill .ki{background:rgba(255,255,255,.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.kpi.fill .spark path{stroke:#fff}.kpi.fill .spark path:first-child{fill:#fff}
+.kpi.fill::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.08)}
+.dash>.s2>.kpi,.dash>.s3>.kpi{height:100%}
+.donut{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.donut svg{width:150px;height:150px;flex:none}
+.dleg{display:grid;gap:8px;flex:1;min-width:150px}
+.dleg div{display:grid;grid-template-columns:12px 1fr auto auto;gap:8px;align-items:center;font-size:.9em}
+.dleg i{width:12px;height:12px;border-radius:4px}
+.mini-list{display:grid;gap:6px}
+.mini-list button{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--bd);border-radius:12px;background:var(--sf);color:var(--tx);cursor:pointer;text-align:left}
+.mini-list button:hover{border-color:var(--ac);background:var(--sf2)}
+.mini-list .av{width:34px;height:34px;font-size:.8em}
+.mini-list .av{flex:none}
+.mini-list span:not(.av){flex:1;min-width:0;display:flex;flex-direction:column;font-weight:600}
+.mini-list small{font-weight:400}
+.hero{background:linear-gradient(120deg,color-mix(in srgb,var(--ac) 85%,#101828),color-mix(in srgb,var(--ac) 55%,var(--a2)));color:#fff;border:0;box-shadow:0 12px 30px color-mix(in srgb,var(--ac) 30%,transparent)}
+.hero .mu,.hero p{color:rgba(255,255,255,.88)!important}
+.hero h2{color:#fff}
+.hero .deco{opacity:.18}
+.hero .qa button{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.25);color:#fff;backdrop-filter:blur(6px)}
+.hero .qa button:hover{background:rgba(255,255,255,.26);border-color:#fff}
+.hero .bar{background:rgba(255,255,255,.25)}
+.hero .bar i{background:#fff!important}
+.tabs{background:var(--sf);border:1px solid var(--bd);box-shadow:var(--sh)}
+.tabs button.on{background:var(--ac);color:#fff;box-shadow:none}
+[data-dark="1"] .tabs button.on{color:#0b0f17}
+@media(max-width:1100px){.dchip{display:none}}
+@media(max-width:700px){
+ .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .kpi.fill{min-height:104px;padding:12px}.kpi.fill b{font-size:1.25em}.kpi.fill .ki{width:30px;height:30px;font-size:.95rem}.kpi.fill span{font-size:.75em}
+ .kpi{flex-direction:column;gap:6px}
+ .bell{width:36px;height:36px}
+ .top{background:linear-gradient(120deg,color-mix(in srgb,var(--ac) 20%,var(--sf)),var(--sf))}
+ .donut svg{width:120px;height:120px}
+ .hero{padding:16px}.hero h2{font-size:1.25rem}.hero .qa{grid-template-columns:repeat(2,1fr)}
+}
+.kpi.bdg{flex-direction:column;align-items:center;text-align:center;gap:2px}
+.kpi.bdg b{font-size:1em}
 </style></head><body><div id="app"></div>
 <noscript>Bu uygulama JavaScript gerektirir.</noscript>
 <script>/* three.js r170 (MIT Lisansı, https://threejs.org) — yalnızca gereken parçalar, çevrimdışı */
@@ -4631,6 +4694,10 @@ function init3D(id,d){
  if(window.ResizeObserver){const ro=new ResizeObserver(()=>{if(!box.isConnected){ro.disconnect();return}draw()});ro.observe(cv)}
  draw();
 }
+
+function donut(rows,o={}){const tot=sum(rows.map(r=>r.value)),R=56,C=2*Math.PI*R;let off=0;
+ const seg=rows.filter(r=>r.value>0).map(r=>{const L=r.value/(tot||1)*C,c=`<circle cx="80" cy="80" r="${R}" fill="none" stroke="${r.color}" stroke-width="20" stroke-dasharray="${L} ${C-L}" stroke-dashoffset="${-off}" transform="rotate(-90 80 80)"><title>${E(r.label)}: ${r.value}</title></circle>`;off+=L;return c}).join('');
+ return `<div class="donut"><svg viewBox="0 0 160 160" role="img" aria-label="${E(o.label||'Dağılım')}"><circle cx="80" cy="80" r="${R}" fill="none" stroke="var(--sf2)" stroke-width="20"/>${seg}<text x="80" y="78" text-anchor="middle" style="font-size:28px;font-weight:800;fill:var(--tx)">${tot}</text><text x="80" y="98" text-anchor="middle" style="font-size:11px;fill:var(--mu)">${E(o.center||'toplam')}</text></svg><div class="dleg">${rows.map(r=>`<div><i style="background:${r.color}"></i><span>${E(r.label)}</span><b>${r.value}</b><small class="mu">%${tot?Math.round(r.value/tot*100):0}</small></div>`).join('')}</div></div>`}
 /* ---------- Başarı Ağacı 6.0 — dallanan, mevsimli, canlı ağaç ---------- */
 const FRUITS=[
  ['Başarı','#e03131','Deneme netleri, ders notları ve tamamlanan konular'],
@@ -4776,6 +4843,8 @@ const B=(label,a,o={},cls='btn')=>`<button type="button" class="${cls}" data-a="
 const pill=(t,c='')=>`<span class="pill ${c}">${t}</span>`;
 function spark(vals,col='var(--ac)'){vals=vals.filter(v=>v!=null&&isFinite(v));if(vals.length<2)return '';const mn=Math.min(...vals),mx=Math.max(...vals),W=120,H=30,X=i=>i/(vals.length-1)*W,Y=v=>H-3-(mx===mn?.5:(v-mn)/(mx-mn))*(H-6);const d=vals.map((v,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1)).join(' ');return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><path d="${d} L${W} ${H} L0 ${H}Z" fill="${col}" opacity=".12"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`}
 const kpi=(l,v,s='',c='',o={})=>`<div class="kpi ${o.cls||''}"${o.col?` style="--kc:${o.col}"`:''}>${o.ic?`<span class="ki">${o.ic}</span>`:''}<div class="kb"><small>${l}</small><b class="${c}">${v}</b><span>${s}</span>${o.spark?spark(o.spark,o.col||'var(--ac)'):''}</div></div>`;
+const tile=(l,v,s,ic,col,sp)=>kpi(l,v,s,'',{ic,col,cls:'fill',spark:sp});
+const kstrip=items=>`<div class="kpis kstrip">${items.map(x=>tile(...x)).join('')}</div>`;
 const card=(title,body,extra='')=>`<div class="card"${extra}>${title?`<h3>${title}</h3>`:''}${body}</div>`;
 const empty=(ic,t,more='')=>`<div class="empty"><span class="big">${ic}</span>${t}${more}</div>`;
 const head=(t,p='',right='')=>`<div class="page-head"><div><h2>${t}</h2>${p?`<p class="mu">${p}</p>`:''}</div>${right?`<div class="row">${right}</div>`:''}</div>`;
@@ -5317,7 +5386,9 @@ function topbar(nav){
   acts=`${s?`<button type="button" class="btn ghost sm" data-a="preview" title="Öğrenci görünümü">👁️<span class="lbl"> Öğrenci görünümü</span></button>`:''}<button type="button" class="btn ghost sm" data-a="logout" title="Kilitle">🔒<span class="lbl"> Kilitle</span></button>`}
  else if(UI.preview){mid=pill('👁️ Önizleme: '+E(s?.name||''),'ac');acts=B('↩ Rehber moduna dön','endPreview',{},'btn sm')}
  else if(s){const a=A(s);mid=`<span class="pill ac">${E(lvl(a.gold))} · ${a.gold} 🪙</span>`;acts=`<button type="button" class="btn ghost sm" data-a="logout">🚪<span class="lbl"> Çıkış</span></button>`}
- return `<header class="top"><div class="m-brand">${brandH()}</div><div class="ttl"><b>${cur[1]} ${E(cur[2])}</b><small class="mu">${E(SUBT[cur[0]]||'')}</small></div>${mid}<div class="acts">${acts}</div></header>`;
+ const nb=UI.role==='teacher'&&!UI.preview?inbox().length:(s?s.messages.filter(x=>x.from==='rehber'&&!x.okundu).length:0),bell=UI.preview?'':`<button type="button" class="bell" data-a="go" data-v="${isT()?'sinif':'rehberim'}" title="Bildirimler" aria-label="Bildirimler: ${nb}">🔔${nb?`<span class="badge">${nb>99?'99+':nb}</span>`:''}</button>`;
+ const dchip=`<span class="dchip">📅 ${new Date().toLocaleDateString('tr-TR',{day:'numeric',month:'short'})} · LGS’ye <b>${Math.max(0,daysTo(db.lgs))}</b> gün</span>`;
+ return `<header class="top"><div class="m-brand">${brandH()}</div><div class="ttl"><b>${cur[1]} ${E(cur[2])}</b><small class="mu">${E(SUBT[cur[0]]||'')}</small></div>${dchip}${mid}${bell}<div class="acts">${acts}</div></header>`;
 }
 function sideFoot(){const s=curS();if(sview()&&s&&!UI.preview)return `<div class="side-foot">${avatar(s)}<div class="grow"><b>${E(s.name)}</b><span class="mu">${E(s.sinif||'')}</span></div><button type="button" class="icon-btn" data-a="logout" title="Çıkış" aria-label="Çıkış">🚪</button></div>`;
  return `<div class="side-foot"><span class="av" style="background:var(--ac)">👩‍🏫</span><div class="grow"><b>Rehber öğretmen</b><span class="mu">${UI.preview?'Önizleme':'Oturum açık'}</span></div><button type="button" class="icon-btn" data-a="logout" title="Kilitle" aria-label="Kilitle">🔒</button></div>`}
@@ -5452,7 +5523,7 @@ function adviceList(s,a,stu,noRel){const L=advice(s,a).filter(x=>(stu?x[2]:x[1])
 function goldBlock(a){const nx=nextLvl(a.gold),prevL=[...LEVELS].reverse().find(L=>L[0]<=a.gold);const p=nx?(a.gold-prevL[0])/(nx[0]-prevL[0])*100:100;return `<div class="row between"><b>${E(lvl(a.gold))} · ${a.gold} 🪙</b><span class="mu">${nx?`${nx[1]} seviyesine ${nx[0]-a.gold} altın`:'En üst seviye 👑'}</span></div><div class="bar" style="margin-top:6px"><i style="width:${p}%;background:var(--a2)"></i></div>`}
 function lgsBox(a){const f=a.n?forecast(a,db.lgs):null;if(!f)return '—';return `${rd(f.lo,0)}–${rd(f.hi,0)} net`}
 function weightNote(){return `<p class="mu" style="margin-top:10px">ℹ️ LGS’de Türkçe, Matematik ve Fen Bilimleri katsayısı 4; İnkılap, Din Kültürü ve İngilizce katsayısı 1’dir. Bu yüzden ilk üç derste 1 net ≈ 5,9 puan, diğerlerinde ≈ 1,5 puan getirir (yaklaşık).</p>`}
-function badgeGrid(s,a){const b=badges(s,a);return b.length?`<div class="grid g3">${b.map(x=>`<div class="kpi" style="text-align:center"><div style="font-size:2rem">${x[0]}</div><b style="font-size:1em">${E(x[1])}</b><span>${E(x[2])}</span></div>`).join('')}</div>`:empty('🎖️','Henüz rozet yok. Etkinlik, deneme ve görevlerle rozetler açılır.')}
+function badgeGrid(s,a){const b=badges(s,a);return b.length?`<div class="grid g3">${b.map(x=>`<div class="kpi bdg"><div style="font-size:2rem">${x[0]}</div><b style="font-size:1em">${E(x[1])}</b><span>${E(x[2])}</span></div>`).join('')}</div>`:empty('🎖️','Henüz rozet yok. Etkinlik, deneme ve görevlerle rozetler açılır.')}
 
 /* ---------- SINIF (rehber ana sayfa) ---------- */
 P.sinif=()=>{
@@ -5462,12 +5533,16 @@ P.sinif=()=>{
  const cd=`<div class="card s4" style="text-align:center;display:flex;flex-direction:column;justify-content:center"><small class="mu" style="font-weight:700;letter-spacing:.04em">LGS’YE KALAN</small><div style="font-size:3.2rem;font-weight:800;color:var(--ac);line-height:1.1">${Math.max(0,d)}</div><b>gün</b><p class="mu">${fmtDate(db.lgs)}</p>${(()=>{const tot=300,p=cl((tot-d)/tot*100,0,100);return `<div class="bar"><i style="width:${p}%"></i></div>`})()}</div>`;
  if(!db.students.length)return `<div class="dash">${warn}${hero}${cd}</div>`+addStudentCard(true);
  const real=L.filter(l=>!l.x.sample),act=L.filter(l=>l.a.lastTot!=null),avgNet=av(act.map(l=>l.a.lastTot));
- const kp=`<div class="s3">${kpi('Öğrenci',real.length,L.length-real.length?`+${L.length-real.length} örnek`:'kayıtlı','',{ic:'👩‍🎓',col:'#4c6ef5'})}</div><div class="s3">${kpi('Destek öncelikli',cnt('oncelik'),'2+ uyarı / akademik &lt; 50','bad-t',{ic:'🚨',col:'var(--bad)'})}</div><div class="s3">${kpi('Takipte',cnt('takip'),'izlenmeye devam','warn-t',{ic:'👀',col:'var(--warn)'})}</div><div class="s3">${kpi('İyi gidiyor',cnt('iyi'),'uyarı yok, akademik ≥ 70','ok-t',{ic:'🌟',col:'var(--ok)'})}</div>`;
+ const byIdx=[];L.forEach(l=>l.a.ex.forEach((e,i)=>{(byIdx[i]=byIdx[i]||[]).push(netTot(e))}));const trend=byIdx.map(v=>av(v));
+ const kp=`<div class="s3">${tile('Öğrenci',real.length,L.length-real.length?`+${L.length-real.length} örnek öğrenci`:'kayıtlı öğrenci','👩‍🎓','#4263eb')}</div><div class="s3">${tile('Destek öncelikli',cnt('oncelik'),'2+ uyarı / akademik < 50','🚨','#e03131')}</div><div class="s3">${tile('Ortalama net',avgNet!=null?rd(avgNet):'—','son denemelerin ortalaması','📝','#7048e8',trend)}</div><div class="s3">${tile('İyi gidiyor',cnt('iyi'),'uyarı yok, akademik ≥ 70','🌟','#0ca678')}</div>`;
+ const rise=L.filter(l=>l.a.n>=3).sort((x,y)=>y.a.b-x.a.b).slice(0,5),need=L.filter(l=>l.a.acad!=null).sort((x,y)=>x.a.acad-y.a.acad).slice(0,5);
+ const mini=(arr,fn)=>arr.length?`<div class="mini-list">${arr.map(l=>`<button type="button" data-a="openStudent" data-id="${E(l.x.id)}">${avatar(l.x)}<span>${E(NM(l.x.name))}<small class="mu">${E(l.x.sinif||'')}</small></span><b>${fn(l)}</b></button>`).join('')}</div>`:empty('📊','Yeterli veri yok.');
+ const charts=`<div class="card s4"><h3>🍩 Durum dağılımı</h3>${donut([{label:'Destek öncelikli',value:cnt('oncelik'),color:'#e03131'},{label:'Takipte',value:cnt('takip'),color:'#f59f00'},{label:'İyi gidiyor',value:cnt('iyi'),color:'#0ca678'},{label:'Veri bekleniyor',value:cnt('veri'),color:'#adb5bd'}],{center:'öğrenci'})}</div><div class="card s8"><h3>📈 Sınıfın deneme ortalaması</h3>${trend.length>1?lineChart({series:[{name:'Ortalama toplam net',color:'var(--ac)',pts:trend.map((v,i)=>[i,v,(i+1)+'. deneme']),area:true}],ymin:0,ymax:90,yticks:[0,30,60,90],xticks:trend.map((_,i)=>[i,(i+1)+'.']),h:220}):empty('📈','En az iki deneme girildiğinde sınıf eğilimi burada görünür.')}</div><div class="card s6"><h3>🚀 En çok gelişenler</h3>${mini(rise,l=>`<span class="${l.a.b>=0?'ok-t':'bad-t'}">${l.a.b>=0?'▲':'▼'} ${rd(Math.abs(l.a.b*30))}/ay</span>`)}</div><div class="card s6"><h3>🤝 Desteğe öncelik verilecekler</h3>${mini(need,l=>`%${Math.round(l.a.acad)}`)}</div>`;
  const inb=`<div class="card s7"><div class="card-head"><h3>🔔 Bekleyen işler <span class="badge" style="${ib.length?'':'background:var(--ok)'}">${ib.length}</span></h3></div>${ib.length?`<div class="list">${ib.slice(0,UI.allIb?999:6).map(inboxItem).join('')}</div>${ib.length>6?`<div class="mt">${B(UI.allIb?'Daha az göster':`Tümünü göster (+${ib.length-6})`,'allIb',{},'btn ghost sm')}</div>`:''}`:empty('✅','Bekleyen onay, talep veya takip yok.')}</div>`;
  const sp=SUB.map(([k,n])=>({n,v:av(L.map(l=>l.a.sub[k].p))}));
  const cls=`<div class="card s5"><h3>📊 Sınıf görünümü</h3><div class="row between"><span class="mu">Son deneme ortalaması</span><b style="font-size:1.3em">${avgNet!=null?rd(avgNet)+' net':'—'}</b></div><div class="bar" style="margin:8px 0 14px;height:12px;display:flex"><i style="width:${cnt('oncelik')/L.length*100}%;background:var(--bad);border-radius:0"></i><i style="width:${cnt('takip')/L.length*100}%;background:var(--warn);border-radius:0"></i><i style="width:${cnt('iyi')/L.length*100}%;background:var(--ok);border-radius:0"></i></div><h4>Ders bazında sınıf gücü</h4>${hbars(sp.map(x=>({label:E(x.n),value:x.v,right:x.v==null?'—':'%'+Math.round(x.v),color:x.v==null?'var(--bd)':x.v>=70?'var(--ok)':x.v<50?'var(--bad)':'var(--warn)'})))}</div>`;
  const list=`<div class="card s12"><div class="card-head"><h3>👩‍🎓 Öğrenciler</h3><div class="row"><input data-i="q" value="${E(UI.q)}" placeholder="🔎 Ad veya sınıf ara" aria-label="Öğrenci ara" style="width:200px;flex:1"><select data-c="flt" aria-label="Filtre" style="width:auto">${[['all','Tümü'],['oncelik','Destek öncelikli'],['takip','Takipte'],['iyi','İyi gidiyor'],['veri','Veri bekleniyor'],['real','Gerçek öğrenciler'],['sample','Örnek öğrenciler']].map(o=>`<option value="${o[0]}" ${UI.flt===o[0]?'selected':''}>${o[1]}</option>`).join('')}</select><select data-c="sort" aria-label="Sırala" style="width:auto">${[['ad','Ada göre'],['net','Son nete göre'],['risk','Uyarıya göre']].map(o=>`<option value="${o[0]}" ${UI.sort===o[0]?'selected':''}>${o[1]}</option>`).join('')}</select></div></div><div id="plist">${plist()}</div></div>`;
- return `<div class="dash">${warn}${hero}${cd}${kp}${inb}${cls}${list}</div>`+addStudentCard(false);
+ return `<div class="dash">${warn}${hero}${cd}${kp}${inb}${cls}${charts}${list}</div>`+addStudentCard(false);
 };
 ACT.addFocus=()=>{const d=$('details.fold');if(d){d.open=true;d.scrollIntoView({behavior:'smooth'});setTimeout(()=>d.querySelector('input')?.focus(),300)}};
 ACT.quickEx=()=>{if(!curS())return toast('Önce öğrenci ekleyin.');UI.view='akademik';UI.sub.aka='den';UI.open.exams=true;render();window.scrollTo({top:0})};
@@ -5501,12 +5576,12 @@ P.ozet=(s,a)=>{
  const {r,t}=status(s),f=a.n?forecast(a,db.lgs):null,d=daysTo(db.lgs),nets=a.ex.map(netTot),m=treeMetrics(s);
  let h=`<div class="page-head"><div class="row">${avatar(s,'lg')}<div><h2>${E(NM(s.name))}</h2><div class="row">${pill(E(s.sinif||'Sınıf yok'))}${pill(STATUS[t][0],STATUS[t][1])}${s.sample?pill('Kurgusal örnek'):''}</div></div></div><div class="row no-print">${B('＋ Deneme','quick',{v:'akademik',sub:'den',k:'exams'},'btn soft sm')}${B('＋ Görüşme','quick',{v:'rehberlik',sub:'gor',k:'meet'},'btn soft sm')}${B('＋ Etkinlik','quick',{v:'gelisim',sub:'etk',k:'acts'},'btn soft sm')}</div></div>`;
  h+=`<div class="dash">
- <div class="s2">${kpi('Son deneme',a.lastTot!=null?rd(a.lastTot)+'<i class="of"> /90</i>':'—',a.lastW!=null?'≈ '+rd(lgsPuan(a.lastW),0)+' puan':'deneme yok','',{ic:'📝',col:'#4c6ef5',spark:nets})}</div>
- <div class="s2">${kpi('LGS tahmini',f?lgsBox(a):'—',f?`≈ ${rd(puanFromNet(f.lo,f.ratio),0)}–${rd(puanFromNet(f.hi,f.ratio),0)} p.`:'en az 1 deneme','',{ic:'🔮',col:'#ae3ec9'})}</div>
- <div class="s2">${kpi('Akademik',a.acad!=null?'%'+Math.round(a.acad):'—','not + son deneme','',{ic:'🎓',col:'#12b886',spark:a.ex.map(e=>netW(e)/WMAX*100)})}</div>
- <div class="s2">${kpi('Sosyal',a.social,'ilişki · etkinlik · davranış','',{ic:'🤝',col:'#f76707'})}</div>
- <div class="s2">${kpi('Altın',a.gold+' 🪙',lvl(a.gold),'',{ic:'🏅',col:'#fab005'})}</div>
- <div class="s2">${kpi('LGS’ye',Math.max(0,d)+' gün',fmtDate(db.lgs),'',{ic:'⏳',col:'#15aabf'})}</div>
+ <div class="s2">${kpi('Son deneme',a.lastTot!=null?rd(a.lastTot)+' <i class="of">/90</i>':'—',a.lastW!=null?'≈ '+rd(lgsPuan(a.lastW),0)+' puan':'deneme yok','',{ic:'📝',col:'#4263eb',spark:nets,cls:'fill'})}</div>
+ <div class="s2">${kpi('LGS tahmini',f?lgsBox(a):'—',f?`≈ ${rd(puanFromNet(f.lo,f.ratio),0)}–${rd(puanFromNet(f.hi,f.ratio),0)} p.`:'en az 1 deneme','',{ic:'🔮',col:'#7048e8',cls:'fill'})}</div>
+ <div class="s2">${kpi('Akademik',a.acad!=null?'%'+Math.round(a.acad):'—','not + son deneme','',{ic:'🎓',col:'#0ca678',spark:a.ex.map(e=>netW(e)/WMAX*100),cls:'fill'})}</div>
+ <div class="s2">${kpi('Sosyal',a.social,'ilişki · etkinlik · davranış','',{ic:'🤝',col:'#f76707',cls:'fill'})}</div>
+ <div class="s2">${kpi('Altın',a.gold+' 🪙',lvl(a.gold),'',{ic:'🏅',col:'#e8a400',cls:'fill'})}</div>
+ <div class="s2">${kpi('LGS’ye',Math.max(0,d)+' gün',fmtDate(db.lgs),'',{ic:'⏳',col:'#1098ad',cls:'fill'})}</div>
  <div class="card s8"><div class="card-head"><h3>📈 Deneme gelişimi</h3>${a.n>=2?`<span class="pill ${a.b>=0?'ok':'bad'}">${a.b>=0?'▲':'▼'} ${rd(Math.abs(a.b*30))} net/ay</span>`:''}</div>${examChart(a,false)}</div>
  <div class="card s4"><h3>📚 Ders gücü</h3>${subjectBars(a)}<p class="mu" style="margin-top:10px;font-size:.82em">×4 / ×1: LGS katsayısı. Yüzde = deneme %60 + not %40.</p></div>
  <div class="card s4"><div class="card-head"><h3>🌳 Başarı ağacı</h3>${B('Aç','go',{v:'agac'},'btn ghost sm')}</div>${treeCard(m,Math.abs(+s.id||7)%9973,'',{small:true})}<div class="row between mt"><span class="mu">🌱 %${m.growth} · 💧 %${m.health}</span><b>${E(STAGES[m.stage])}</b></div></div>
@@ -5520,10 +5595,10 @@ P.ozet=(s,a)=>{
 ACT.quick=d=>{UI.view=d.v;UI.sub[{akademik:'aka',rehberlik:'reh',gelisim:'gel'}[d.v]]=d.sub;UI.open[d.k]=true;render();window.scrollTo({top:0})};
 
 /* ---------- AKADEMİK ---------- */
-P.akademik=(s,a)=>{const T=tabs('aka',[['den','📝 Denemeler'],['not','📚 Ders notları'],['kon','🎯 Konular'],['yan','❌ Yanlış defteri']]);return head('Akademik',E(NM(s.name)))+T.html+({den:examsPage,not:gradesPage,kon:topicsPage,yan:mistakesPage}[T.cur])(s,a)};
+P.akademik=(s,a)=>{const best=a.n?Math.max(...a.ex.map(netTot)):null,st=kstrip([['Onaylı deneme',a.n,s.exams.some(x=>x.onay==='bekliyor')?s.exams.filter(x=>x.onay==='bekliyor').length+' onay bekliyor':'kayıtlı deneme','📝','#4263eb'],['Son toplam',a.lastTot!=null?rd(a.lastTot)+' net':'—',best!=null?'en yüksek '+rd(best):'','🎯','#7048e8',a.ex.map(netTot)],['≈ LGS puanı',a.lastW!=null?rd(lgsPuan(a.lastW),0):'—','ağırlıklı netten','🏆','#0ca678',a.ex.map(e=>lgsPuan(netW(e)))],['Eğilim',a.n>=2?(a.b>=0?'▲ ':'▼ ')+rd(Math.abs(a.b*30)):'—','net / ay','📈',a.b>=0?'#1098ad':'#e03131']]);const T=tabs('aka',[['den','📝 Denemeler'],['not','📚 Ders notları'],['kon','🎯 Konular'],['yan','❌ Yanlış defteri']]);return head('Akademik',E(NM(s.name)))+st+T.html+({den:examsPage,not:gradesPage,kon:topicsPage,yan:mistakesPage}[T.cur])(s,a)};
 function examsPage(s,a){
  const best=a.n?Math.max(...a.ex.map(netTot)):null;
- let h=`<div class="kpis">${kpi('Onaylı deneme',a.n)}${kpi('Son toplam',a.lastTot!=null?rd(a.lastTot)+' net':'—')}${kpi('Yaklaşık puan',a.lastW!=null?rd(lgsPuan(a.lastW),0):'—','ağırlıklı ham netten')}${kpi('En yüksek',best!=null?rd(best)+' net':'—')}</div>`;
+ let h='';
  h+=`<div class="card"><div class="card-head"><h3>📈 Gelişim</h3><div class="tabs" style="margin:0">${['2B','3B'].map((x,i)=>`<button type="button" class="${UI.c3d===!!i?'on':''}" data-a="c3d" data-v="${i}">${x}</button>`).join('')}</div></div>${UI.c3d?(a.n?chart3D({rows:a.ex.map(e=>e.tarih?fmtDate(e.tarih).slice(0,5):String(e.ad).slice(0,8)),cols:SUB.map(x=>x[1].split(' ')[0]),vals:a.ex.map(e=>SUB.map(x=>num(e[x[0]])==null?null:num(e[x[0]])/x[2]*100)),max:100,colors:SUBCOL,label:'Denemelerin ders bazlı 3B görünümü',fmt:v=>'%'+Math.round(v)})+'<p class="mu">Sütun yüksekliği: o derste alınabilecek en yüksek nete göre yüzde.</p>'+`<div class="legend">${SUB.map((x,i)=>`<span><i style="background:${SUBCOL[i]}"></i>${x[1]}</span>`).join('')}</div>`:empty('📝','Henüz deneme yok.')):examChart(a)}</div>`;
  if(a.n)h+=card('📊 Ders bazlı durum',`<div class="tw"><table><thead><tr><th>Ders</th><th class="num">Katsayı</th><th class="num">Ortalama</th><th class="num">Son</th><th class="num">Başarı</th><th class="num">1 net ≈</th></tr></thead><tbody>${a.subs.map(x=>`<tr><td>${E(x.name)}</td><td class="num">×${x.w}</td><td class="num">${rd(x.avg)} / ${x.m}</td><td class="num">${rd(x.last)}</td><td class="num">${x.ep==null?'—':'%'+Math.round(x.ep)}</td><td class="num">${rd(400*x.w/WMAX)} puan</td></tr>`).join('')}</tbody></table></div>${weightNote()}`);
  h+=card('🗂️ Deneme kayıtları',crud('exams',{addLabel:'Deneme ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['Toplam',x=>`<b>${rd(netTot(x))}</b>`,'num'],['≈ Puan',x=>rd(lgsPuan(netW(x)),0),'num']],formNote:'Net = doğru − yanlış ÷ 3. Boş bırakılan dersler 0 sayılmaz, hesaba katılmaz.',empty:'Henüz deneme kaydı yok.'}));
@@ -5542,7 +5617,7 @@ function mistakesPage(s,a){
 }
 
 /* ---------- GELİŞİM ---------- */
-P.gelisim=(s,a)=>{const T=tabs('gel',[['etk','🏅 Etkinlikler'],['ili','🤝 İlişkiler'],['dav','🕘 Devamsızlık / davranış'],['ruh','🙂 Ruh hâli']]);return head('Gelişim',E(NM(s.name)))+T.html+({etk:actsPage,ili:relPage,dav:attPage,ruh:moodPage}[T.cur])(s,a)};
+P.gelisim=(s,a)=>{const st=kstrip([['Altın',a.gold+' 🪙',lvl(a.gold),'🏅','#e8a400'],['Etkinlik',a.acts.length,a.acts.filter(x=>x.tur==='Kitap okuma').length+' kitap','🎨','#d6336c'],['Sosyal gösterge',a.social,'ilişki · etkinlik · davranış','🤝','#7048e8'],['Devamsızlık',a.absent+' gün',a.good+' olumlu davranış','🕘',a.absent>=8?'#e03131':'#1098ad']]);const T=tabs('gel',[['etk','🏅 Etkinlikler'],['ili','🤝 İlişkiler'],['dav','🕘 Devamsızlık / davranış'],['ruh','🙂 Ruh hâli']]);return head('Gelişim',E(NM(s.name)))+st+T.html+({etk:actsPage,ili:relPage,dav:attPage,ruh:moodPage}[T.cur])(s,a)};
 function actsPage(s,a){
  const bt={};a.acts.forEach(x=>bt[x.tur]=(bt[x.tur]||0)+G(x));const mx=Math.max(1,...Object.values(bt));
  return `<div class="grid g2"><div class="card"><h3>🪙 Altın ve seviye</h3>${goldBlock(a)}<p class="mu mt">Altın = etkinlik türü + düzey (okul 5 · ilçe 10 · il 20 · ulusal 40 · uluslararası 80) + rehber ek altını. Öğrencinin eklediği etkinlik, onaydan sonra altın kazandırır.</p></div><div class="card"><h3>📊 Altın dağılımı</h3>${Object.keys(bt).length?hbars(Object.entries(bt).sort((x,y)=>y[1]-x[1]).map(([k,v])=>({label:E(k),value:v,max:mx,right:v+' 🪙',color:'var(--a2)'}))):empty('🏅','Henüz etkinlik yok.')}</div></div>`+card('🏅 Etkinlikler',crud('acts',{addLabel:'Etkinlik ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['Altın',x=>x.onay==='bekliyor'?'—':G(x)+' 🪙','num']],note:sview()?'Eklediğin etkinlik rehber öğretmenin onayından sonra altın kazandırır.':''}));
@@ -5553,7 +5628,7 @@ function moodPage(s,a){const m=s.mood.slice().sort((x,y)=>String(x.tarih).locale
  return `<div class="callout" style="margin-bottom:16px">Ruh hâli, öğrencinin kendi ana sayfasından paylaştığı bilgidir. Tanı aracı değildir; düşük seyir bir görüşme fırsatıdır.</div>`+card('🙂 Son paylaşımlar',m.length?`<div class="row" style="font-size:1.6em;gap:6px">${m.map(x=>`<span title="${fmtDate(x.tarih)}">${MOODS[x.v-1]}</span>`).join('')}</div>${m.length>1?lineChart({series:[{name:'Ruh hâli',color:'var(--a2)',pts:m.map((x,i)=>[i,x.v,fmtDate(x.tarih)])}],ymin:1,ymax:5,yticks:[1,2,3,4,5],h:180,xticks:thin(m.map((x,i)=>[i,fmtDate(x.tarih).slice(0,5)]))}):''}`:empty('🙂','Öğrenci henüz ruh hâli paylaşmadı.'))}
 
 /* ---------- PLAN VE HEDEF (rehber + öğrenci ortak) ---------- */
-P.plan=(s,a)=>{const T=tabs('pl',sview()?[['hafta','📅 Haftalık plan'],['sablon','🧩 Hazır planlar']]:[['hafta','📅 Haftalık plan'],['sablon','🧩 Hazır planlar'],['hedef','⭐ Hedef okul'],['rozet','🎖️ Rozetler']]);return head(sview()?'Planım':'Plan ve hedef',sview()?'Görevlerini işaretle, kendi görevlerini ekle.':E(NM(s.name)))+T.html+({hafta:weekPage,sablon:tplPage,hedef:goalPage,rozet:(s,a)=>card('🎖️ Rozetler',goldBlock(a)+'<div class="mt">'+badgeGrid(s,a)+'</div>')}[T.cur])(s,a)};
+P.plan=(s,a)=>{const pd=s.plan.filter(x=>x.durum==='Yapıldı').length,tb=num(s.hedef.taban),st=kstrip([['Görevler',pd+' / '+s.plan.length,'tamamlanan','✅','#0ca678'],['Bekleyen',s.plan.filter(x=>x.durum==='Planlandı').length,s.plan.filter(x=>x.durum==='Ertelendi').length+' ertelendi','⏳','#f59f00'],['Hedef taban',tb?rd(tb,0):'—',s.hedef.okul||'hedef belirlenmedi','🏫','#4263eb'],['Rozetler',badges(s,a).length,'kazanılan','🎖️','#d6336c']]);const T=tabs('pl',sview()?[['hafta','📅 Haftalık plan'],['sablon','🧩 Hazır planlar']]:[['hafta','📅 Haftalık plan'],['sablon','🧩 Hazır planlar'],['hedef','⭐ Hedef okul'],['rozet','🎖️ Rozetler']]);return head(sview()?'Planım':'Plan ve hedef',sview()?'Görevlerini işaretle, kendi görevlerini ekle.':E(NM(s.name)))+st+T.html+({hafta:weekPage,sablon:tplPage,hedef:goalPage,rozet:(s,a)=>card('🎖️ Rozetler',goldBlock(a)+'<div class="mt">'+badgeGrid(s,a)+'</div>')}[T.cur])(s,a)};
 function weekPage(s,a){
  const pl=s.plan,dn=pl.filter(x=>x.durum==='Yapıldı').length,ro=RO();
  const cyc={'Planlandı':'Yapıldı','Yapıldı':'Ertelendi','Ertelendi':'Planlandı'};
@@ -5581,7 +5656,7 @@ function goalPage(s,a){
 SUBMIT._goal=(k,f)=>{if(RO())return;const s=curS(),o={};for(const n of ['okul','taban','net','altin']){const v=f.elements[n].value.trim();if(n!=='okul'&&v!==''&&!isFinite(+v))return toast('Geçersiz sayı.','err');o[n]=n==='okul'?v:v===''?'':+v}if(o.taban!==''&&(o.taban<100||o.taban>500))return toast('Taban puanı 100–500 arasında olmalı.','err');s.hedef={...s.hedef,...o};save();render();toast('⭐ Hedef kaydedildi.')};
 
 /* ---------- TAHMİN VE İKİZLER ---------- */
-P.tahmin=(s,a)=>{const T=tabs('tah',[['tah','🔮 LGS tahmini'],['ikz','👥 Dijital ikizler']]);return head('Tahmin ve dijital ikizler',E(NM(s.name)))+T.html+(T.cur==='tah'?forecastPage(s,a):twinsPage(s,a))};
+P.tahmin=(s,a)=>{const f=a.n?forecast(a,db.lgs):null,st=kstrip([['Son deneme',a.lastTot!=null?rd(a.lastTot)+' net':'—',a.lastW!=null?'≈ '+rd(lgsPuan(a.lastW),0)+' puan':'','📝','#4263eb',a.ex.map(netTot)],['LGS günü olası',f?rd(f.lo,0)+'–'+rd(f.hi,0):'—','net aralığı','🔮','#7048e8'],['≈ Puan aralığı',f?rd(puanFromNet(f.lo,f.ratio),0)+'–'+rd(puanFromNet(f.hi,f.ratio),0):'—','yaklaşık','🏆','#0ca678'],['Dijital ikiz',s.twins.length,'senaryo','👥','#f76707']]);const T=tabs('tah',[['tah','🔮 LGS tahmini'],['ikz','👥 Dijital ikizler']]);return head('Tahmin ve dijital ikizler',E(NM(s.name)))+st+T.html+(T.cur==='tah'?forecastPage(s,a):twinsPage(s,a))};
 function forecastPage(s,a){
  if(a.n<2)return card('',empty('🔮','Eğilim hesaplamak için en az 2 onaylı deneme gerekir.'));
  const steps=[30,60,90].map(dd=>ymd(new Date(Date.now()+dd*864e5))).filter(d=>d<db.lgs).concat([db.lgs]);
@@ -5607,7 +5682,7 @@ function treeStage(m,seed){const md=treeMode();
 P.agac=(s,a)=>{const T=sview()?{cur:'ben',html:''}:tabs('agc',[['ben','🌳 Öğrencinin ağacı'],['orm','🎬 Örnek orman']]);
  let h=head(sview()?'Başarı ağacım':'Başarı ağacı',sview()?'Çalıştıkça, okudukça, yardım ettikçe ağacın büyür.':'Öğrencinin kayıtları ağacı besler; meyveler gelişim alanlarını gösterir.')+T.html;
  if(T.cur==='orm')return h+forestPage();
- const m=treeMetrics(s),seed=Math.abs(+s.id||7)%9973;h+=treeStage(m,seed);
+ const m=treeMetrics(s),seed=Math.abs(+s.id||7)%9973;h+=kstrip([['Aşama',STAGES[m.stage],m.season,'🌳','#2f9e44'],['Gelişim','%'+m.growth,'kayıtlarla büyür','🌱','#0ca678'],['Canlılık','%'+m.health,m.elapsed!=null?m.elapsed+' gün önce son kayıt':'kayıt yok','💧','#1098ad'],['Olgun meyve',m.fruits.filter(v=>v>=35).length+' / 6','35 puanda belirir','🍎','#e03131']])+treeStage(m,seed);
  if(s.twins.length)h+=card('👥 Dijital ikizlerin ağaçları',`<p class="mu">Varsayımsal senaryolardır; gerçek veri değildir.</p><div class="forest">${s.twins.map((t,i)=>`<div>${treeCard(treeTwin(m,t),seed+i+1,t.ad,{small:true})}</div>`).join('')}</div>`);
  h+=`<details class="fold"><summary>🌱 Ağaç neye göre büyür?</summary><p><b>Gelişim</b>; akademik durum, sosyal gösterge, meyvelerin ortalaması, kayıt sayısı ve kayıt çeşitliliğinden hesaplanır. <b>Canlılık</b>; son 14 gündeki kayıtlar, son denemedeki değişim ve uzun süre kayıt girilmemesiyle değişir. Canlılık düşerse ağaç sonbahara, çok düşerse kışa girer — bu bir yargı değil, “ilgilenme zamanı” işaretidir.</p><p>Meyveler 35 puanda belirir, 60 ve 80 puanda çoğalır. 3B görünümde sürükleyerek ağacın etrafında dönebilir, ⤒ ⤓ ile yukarı-aşağı bakabilir, ＋ － ile yakınlaşabilirsiniz. Kuşlar ara sıra sahneden geçer; doğa sesleri mevsime göre değişir.</p></details>`;
  return h;
@@ -5623,9 +5698,9 @@ ACT.forestPick=d=>{stopForest();UI.demo=+d.i;UI.tick=0;forestRefresh()};
 IN.tick=v=>{stopForest();UI.tick=+v;forestRefresh()};
 
 /* ---------- REHBERLİK ---------- */
-P.rehberlik=(s,a)=>{const unread=s.messages.filter(x=>x.from==='ogrenci'&&!x.okundu).length+s.appointments.filter(x=>(x.durum||'Bekliyor')==='Bekliyor').length;
+P.rehberlik=(s,a)=>{const due=s.meet.filter(x=>x.takip&&x.takip<=today()&&x.takipDurum!=='Yapıldı').length,st=kstrip([['Görüşme',s.meet.length,'kayıtlı görüşme','🗓️','#4263eb'],['Takip zamanı',due,'tarihi gelen','⏰',due?'#e03131':'#0ca678'],['Mesaj',s.messages.length,s.messages.filter(x=>x.from==='ogrenci'&&!x.okundu).length+' okunmamış','✉️','#7048e8'],['Talep',s.appointments.length,s.appointments.filter(x=>(x.durum||'Bekliyor')==='Bekliyor').length+' bekliyor','📩','#f76707']]);const unread=s.messages.filter(x=>x.from==='ogrenci'&&!x.okundu).length+s.appointments.filter(x=>(x.durum||'Bekliyor')==='Bekliyor').length;
  const T=tabs('reh',[['gor','🗓️ Görüşmeler'],['talep','📩 Talepler ve mesajlar'+(unread?` (${unread})`:'')],['tav','💡 Tavsiyeler'],['mes','🧭 Meslek keşfi']]);
- return head('Rehberlik',E(NM(s.name)))+T.html+({gor:s=>card('🗓️ Görüşme kayıtları',`<p class="mu">Bu kayıtlar yalnızca rehber ekranında görünür.</p>`+crud('meet',{addLabel:'Görüşme ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['',x=>x.takip&&x.takip<=today()&&x.takipDurum!=='Yapıldı'?pill('Takip zamanı','bad'):'']]})),talep:requestsPage,tav:(s,a)=>`<div class="grid g2"><div class="card"><h3>🤖 Otomatik öneriler</h3><p class="mu">Kayıtlardan kurallarla üretilir; öğrenci kendine hitap eden sürümünü görür.</p>${adviceList(s,a,false)}</div><div class="card"><h3>✍️ Sizin tavsiyeleriniz</h3><p class="mu">Buraya yazdıklarınızı öğrenci “Rehberim” bölümünde görür.</p>${crud('adv',{addLabel:'Tavsiye yaz',showText:true})}</div></div>`,mes:careerPage}[T.cur])(s,a);
+ return head('Rehberlik',E(NM(s.name)))+st+T.html+({gor:s=>card('🗓️ Görüşme kayıtları',`<p class="mu">Bu kayıtlar yalnızca rehber ekranında görünür.</p>`+crud('meet',{addLabel:'Görüşme ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['',x=>x.takip&&x.takip<=today()&&x.takipDurum!=='Yapıldı'?pill('Takip zamanı','bad'):'']]})),talep:requestsPage,tav:(s,a)=>`<div class="grid g2"><div class="card"><h3>🤖 Otomatik öneriler</h3><p class="mu">Kayıtlardan kurallarla üretilir; öğrenci kendine hitap eden sürümünü görür.</p>${adviceList(s,a,false)}</div><div class="card"><h3>✍️ Sizin tavsiyeleriniz</h3><p class="mu">Buraya yazdıklarınızı öğrenci “Rehberim” bölümünde görür.</p>${crud('adv',{addLabel:'Tavsiye yaz',showText:true})}</div></div>`,mes:careerPage}[T.cur])(s,a);
 };
 function requestsPage(s,a){
  const ap=s.appointments.slice().sort((x,y)=>String(y.created||y.tarih).localeCompare(String(x.created||x.tarih)));
@@ -5661,10 +5736,10 @@ P.ana=(s,a)=>{
  h+=`<div class="dash">
  <div class="hero s8"><span class="deco">🌳</span><h2>Merhaba ${E(String(s.name).split(/\s+/)[0])}! 👋</h2><p class="mu">${E(QUOTES[new Date().getDay()])}</p>${goldBlock(a)}<div class="qa mt">${[['📝','Deneme gir','denemeler'],['⏱️','Çalışma ekle','calisma'],['❌','Yanlış ekle','calisma'],['📖','Nasıl kullanırım?','nasil']].map(q=>`<button type="button" data-a="go" data-v="${q[2]}"><span>${q[0]}</span>${q[1]}</button>`).join('')}</div></div>
  <div class="card s4" style="text-align:center;display:flex;flex-direction:column;justify-content:center"><small class="mu" style="font-weight:700;letter-spacing:.04em">LGS’YE KALAN</small><div style="font-size:3rem;font-weight:800;color:var(--ac);line-height:1.1">${Math.max(0,d)}</div><b>gün</b><p class="mu">${fmtDate(db.lgs)}</p></div>
- <div class="s3">${kpi('Son deneme',a.lastTot!=null?rd(a.lastTot)+' net':'—',a.lastW!=null?'≈ '+rd(lgsPuan(a.lastW),0)+' puan':'henüz yok','',{ic:'📝',col:'#4c6ef5',spark:a.ex.map(netTot)})}</div>
- <div class="s3">${kpi('Görevler',dn+' / '+s.plan.length,'tamamlanan','',{ic:'✅',col:'var(--ok)'})}</div>
- <div class="s3">${kpi('Rozetler',badges(s,a).length,'kazanılan','',{ic:'🎖️',col:'#fab005'})}</div>
- <div class="s3">${kpi('Ağacım',STAGES[m.stage],'🌱 %'+m.growth+' · 💧 %'+m.health,'',{ic:'🌳',col:'#2f9e44'})}</div>
+ <div class="s3">${kpi('Son deneme',a.lastTot!=null?rd(a.lastTot)+' net':'—',a.lastW!=null?'≈ '+rd(lgsPuan(a.lastW),0)+' puan':'henüz yok','',{ic:'📝',col:'#4263eb',spark:a.ex.map(netTot),cls:'fill'})}</div>
+ <div class="s3">${kpi('Görevler',dn+' / '+s.plan.length,'tamamlanan','',{ic:'✅',col:'#0ca678',cls:'fill'})}</div>
+ <div class="s3">${kpi('Rozetler',badges(s,a).length,'kazanılan','',{ic:'🎖️',col:'#d6336c',cls:'fill'})}</div>
+ <div class="s3">${kpi('Ağacım',STAGES[m.stage],'🌱 %'+m.growth+' · 💧 %'+m.health,'',{ic:'🌳',col:'#2f9e44',cls:'fill'})}</div>
  <div class="card s7"><div class="card-head"><h3>🌳 Başarı ağacım</h3>${B('🧊 3B gör','tree3',{},'btn soft sm')}</div>${treeCard(m,seed,'',{})}<p class="callout mt">🌿 ${E(m.msg[0])}</p></div>
  <div class="s5" style="display:grid;gap:var(--gap);align-content:start"><div class="card" style="margin:0"><h3>Bugün nasılsın?</h3><div class="moods">${MOODS.map((e,i)=>`<button type="button" class="${lm&&lm.v===i+1?'on':''}" data-a="mood" data-v="${i+1}" aria-label="Ruh hâli ${i+1}/5" ${RO()?'disabled':''}>${e}</button>`).join('')}</div><p class="mu" style="margin-top:8px;font-size:.85em">Yalnızca rehber öğretmenin görür.</p></div><div class="card" style="margin:0"><h3>📅 Sıradaki görevler</h3>${todo.length?`<div class="list">${todo.slice(0,5).map(x=>`<div class="item"><span>${PLAN_ICON[x.ders]||'📌'}</span><div class="grow"><b>${E(x.gun)}</b> · ${E(x.gorev)}</div>${RO()?'':B('✔','taskDone',{id:x.id},'btn ok sm')}</div>`).join('')}</div>`:empty('🎉','Bekleyen görevin yok!')}</div></div>
  <div class="card s12"><h3>💡 Senin için öneriler</h3><div class="grid g2" style="gap:8px">${adviceList(s,a,true).replace('<div class="list">','').replace(/<\/div>$/,'')}</div></div>
@@ -5676,18 +5751,18 @@ ACT.mood=d=>{if(RO())return;const s=curS(),e=s.mood.find(x=>x.tarih===today());i
 ACT.taskDone=d=>{if(RO())return;const x=curS().plan.find(y=>same(y.id,d.id));if(x){x.durum='Yapıldı';save();render();toast('✅ Harika! Ağacın biraz daha büyüdü.')}};
 P.denemeler=(s,a)=>{
  const pend=s.exams.filter(x=>x.onay==='bekliyor').length;
- return head('Denemelerim','Deneme sonucunu ekle; rehber öğretmenin onaylayınca grafiğine yansır.')+`<div class="kpis">${kpi('Deneme',a.n)}${kpi('Son toplam',a.lastTot!=null?rd(a.lastTot)+' net':'—')}${kpi('≈ Puan',a.lastW!=null?rd(lgsPuan(a.lastW),0):'—')}${kpi('Onay bekleyen',pend,'','warn-t')}</div>`+card('📈 Gelişimim',examChart(a,false))+card('📚 Derslerim',subjectBars(a)+weightNote())+card('🗂️ Deneme kayıtlarım',crud('exams',{addLabel:'Deneme sonucu ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['Toplam',x=>`<b>${rd(netTot(x))}</b>`,'num']],formNote:'Net = doğru − yanlış ÷ 3.'}));
+ return head('Denemelerim','Deneme sonucunu ekle; rehber öğretmenin onaylayınca grafiğine yansır.')+kstrip([['Deneme',a.n,'onaylı','📝','#4263eb'],['Son toplam',a.lastTot!=null?rd(a.lastTot)+' net':'—','','🎯','#7048e8',a.ex.map(netTot)],['≈ Puan',a.lastW!=null?rd(lgsPuan(a.lastW),0):'—','ağırlıklı netten','🏆','#0ca678',a.ex.map(e=>lgsPuan(netW(e)))],['Onay bekleyen',pend,'rehber onayı','⏳','#f59f00']])+card('📈 Gelişimim',examChart(a,false))+card('📚 Derslerim',subjectBars(a)+weightNote())+card('🗂️ Deneme kayıtlarım',crud('exams',{addLabel:'Deneme sonucu ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih)),cols:[['Toplam',x=>`<b>${rd(netTot(x))}</b>`,'num']],formNote:'Net = doğru − yanlış ÷ 3.'}));
 };
-P.calisma=(s,a)=>{const T=tabs('cal',[['kon','🎯 Konularım'],['yan','❌ Yanlış defterim'],['gun','⏱️ Çalışma günlüğüm'],['not','📚 Notlarım']]);
- return head('Çalışmalarım')+T.html+({kon:topicsPage,yan:mistakesPage,gun:habitsPage,not:(s,a)=>card('📚 Ders notlarım',crud('grades',{addLabel:'Not ekle',cols:[['Ortalama',x=>rd(gradeOf(x)),'num']],note:'Eklediğin not rehber onayından sonra hesaplara katılır.'}))}[T.cur])(s,a)};
+P.calisma=(s,a)=>{const dn=s.topics.filter(x=>x.durum==='Tamamlandı').length,mn=s.mistakes.filter(x=>x.durum==='Çözüldü').length,st=kstrip([['Konular',dn+' / '+s.topics.length,'tamamlanan','🎯','#0ca678'],['Yanlış defteri',mn+' / '+s.mistakes.length,'çözülen','🧩','#d6336c'],['Çalışma',Math.round(sum(s.habits.map(x=>+x.dakika||0))/6)/10+' saat',sum(s.habits.map(x=>+x.soru||0))+' soru','⏱️','#4263eb'],['Günlük',s.diary.length,'yazılan gün','📓','#7048e8']]);const T=tabs('cal',[['kon','🎯 Konularım'],['yan','❌ Yanlış defterim'],['gun','⏱️ Çalışma günlüğüm'],['not','📚 Notlarım']]);
+ return head('Çalışmalarım')+st+T.html+({kon:topicsPage,yan:mistakesPage,gun:habitsPage,not:(s,a)=>card('📚 Ders notlarım',crud('grades',{addLabel:'Not ekle',cols:[['Ortalama',x=>rd(gradeOf(x)),'num']],note:'Eklediğin not rehber onayından sonra hesaplara katılır.'}))}[T.cur])(s,a)};
 function habitsPage(s,a){
  const h=s.habits,tot=sum(h.map(x=>+x.dakika||0)),q=sum(h.map(x=>+x.soru||0));const by={};h.forEach(x=>{if(x.tarih)by[x.tarih]=(by[x.tarih]||0)+(+x.dakika||0)});const days=Object.entries(by).sort().slice(-14);
  let streak=0;for(let i=0;i<365;i++){const d=ymd(new Date(Date.now()-i*864e5));if(by[d])streak++;else if(i>0)break}
  return `<div class="kpis">${kpi('Toplam süre',Math.round(tot/60*10)/10+' saat')}${kpi('Çözülen soru',q)}${kpi('Seri',streak+' gün','art arda kayıt')}</div><div class="grid g2"><div class="card"><h3>📊 Son günlerin çalışma süresi</h3>${days.length?colChart(days.map(([d,v])=>({label:fmtDate(d).slice(0,5),value:v,color:'var(--ac)'})),{label:'Günlük dakika'}):empty('⏱️','Henüz çalışma kaydı yok.')}</div><div class="card"><h3>⏱️ Kayıtlar</h3>${crud('habits',{addLabel:'Çalışma ekle',sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih))})}</div></div>`+card('📓 Gelişim günlüğüm',crud('diary',{addLabel:'Günlük yaz',showText:true,sort:(x,y)=>String(y.tarih).localeCompare(String(x.tarih))}));
 }
-P.etkinlik=(s,a)=>head('Etkinliklerim','Kitap, spor, proje, gezi… Her etkinlik onaydan sonra altın kazandırır.')+actsPage(s,a);
-P.hedef=(s,a)=>{const T=tabs('hed',[['hed','⭐ Hedef okulum'],['roz','🎖️ Rozetlerim'],['ikz','👥 Dijital ikizlerim']]);
- return head('Hedeflerim')+T.html+({hed:goalPage,roz:(s,a)=>card('🎖️ Rozetlerim',goldBlock(a)+'<div class="mt">'+badgeGrid(s,a)+'</div>'),ikz:(s,a)=>s.twins.length?twinsPage(s,a)+`<div class="callout">İkizlerin, farklı çalışma tercihlerinin olası etkisini gösterir. Daha yüksek bir ikiz neti, senin başarısız olduğun anlamına gelmez; denenebilecek bir yolu gösterir.</div>`:card('',empty('👥','Rehber öğretmenin henüz dijital ikiz oluşturmadı.'))}[T.cur])(s,a)};
+P.etkinlik=(s,a)=>head('Etkinliklerim','Kitap, spor, proje, gezi… Her etkinlik onaydan sonra altın kazandırır.')+kstrip([['Altın',a.gold+' 🪙',lvl(a.gold),'🏅','#e8a400'],['Etkinlik',a.acts.length,'onaylı','🎨','#d6336c'],['Kitap',a.acts.filter(x=>x.tur==='Kitap okuma').length,'okunan','📚','#7048e8'],['Onay bekleyen',s.acts.filter(x=>x.onay==='bekliyor').length,'rehber onayı','⏳','#f59f00']])+actsPage(s,a);
+P.hedef=(s,a)=>{const tb=num(s.hedef.taban),cp=a.lastW!=null?lgsPuan(a.lastW):null,st=kstrip([['Hedef okul',s.hedef.okul||'—',tb?'taban ≈ '+rd(tb,0):'taban girilmedi','🏫','#4263eb'],['Şu anki ≈ puan',cp!=null?rd(cp,0):'—',tb&&cp!=null?(cp>=tb?'hedefin üzerinde 🎉':rd(tb-cp,0)+' puan kaldı'):'','🎯','#0ca678'],['Rozetler',badges(s,a).length,'kazanılan','🎖️','#d6336c'],['Dijital ikiz',s.twins.length,'senaryo','👥','#f76707']]);const T=tabs('hed',[['hed','⭐ Hedef okulum'],['roz','🎖️ Rozetlerim'],['ikz','👥 Dijital ikizlerim']]);
+ return head('Hedeflerim')+st+T.html+({hed:goalPage,roz:(s,a)=>card('🎖️ Rozetlerim',goldBlock(a)+'<div class="mt">'+badgeGrid(s,a)+'</div>'),ikz:(s,a)=>s.twins.length?twinsPage(s,a)+`<div class="callout">İkizlerin, farklı çalışma tercihlerinin olası etkisini gösterir. Daha yüksek bir ikiz neti, senin başarısız olduğun anlamına gelmez; denenebilecek bir yolu gösterir.</div>`:card('',empty('👥','Rehber öğretmenin henüz dijital ikiz oluşturmadı.'))}[T.cur])(s,a)};
 P.meslek=(s,a)=>head('Meslek keşfi','İlgi alanlarını ve güçlü derslerini keşfet.')+careerPage(s,a);
 P.rehberim=(s,a)=>{
  AFTER.push(()=>{let ch=false;s.messages.forEach(m=>{if(m.from==='rehber'&&!m.okundu){m.okundu=true;ch=true}});if(ch&&!RO())save()});
